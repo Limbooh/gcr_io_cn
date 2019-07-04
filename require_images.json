@@ -1,0 +1,267 @@
+[
+  {
+    "key": "dnsautoscaler",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "k8s.gcr.io/cluster-proportional-autoscaler-amd64",
+      "tag": "1.6.0",
+      "groups": [
+        "kube-master"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "kubeadm_kube-proxy",
+    "value": {
+      "repo": "gcr.io/google-containers/kube-proxy",
+      "container": true,
+      "tag": "v1.15.0",
+      "enabled": true,
+      "groups": "k8s-cluster"
+    }
+  },
+  {
+    "key": "pod_infra",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "gcr.io/google_containers/pause-amd64",
+      "tag": "3.1",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "kubeadm",
+    "value": {
+      "unarchive": false,
+      "file": true,
+      "dest": "/root/releases/kubeadm-v1.15.0-amd64",
+      "enabled": true,
+      "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.0/bin/linux/amd64/kubeadm",
+      "version": "v1.15.0",
+      "mode": "0755",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "owner": "root",
+      "sha256": "fc4aa44b96dc143d7c3062124e25fed671cab884ebb8b2446edd10abb45e88c2"
+    }
+  },
+  {
+    "key": "kubeadm_pause",
+    "value": {
+      "repo": "gcr.io/google-containers/pause",
+      "container": true,
+      "tag": "3.1",
+      "enabled": true,
+      "groups": "k8s-cluster"
+    }
+  },
+  {
+    "key": "etcd",
+    "value": {
+      "unarchive": true,
+      "container": true,
+      "groups": [
+        "etcd"
+      ],
+      "dest": "/root/releases/etcd-v3.3.10-linux-amd64.tar.gz",
+      "version": "v3.3.10",
+      "enabled": true,
+      "repo": "quay.io/coreos/etcd",
+      "url": "https://github.com/coreos/etcd/releases/download/v3.3.10/etcd-v3.3.10-linux-amd64.tar.gz",
+      "tag": "v3.3.10",
+      "mode": "0755",
+      "file": false,
+      "owner": "root",
+      "sha256": ""
+    }
+  },
+  {
+    "key": "kubeadm_kube-apiserver",
+    "value": {
+      "repo": "gcr.io/google-containers/kube-apiserver",
+      "container": true,
+      "tag": "v1.15.0",
+      "enabled": true,
+      "groups": "k8s-cluster"
+    }
+  },
+  {
+    "key": "nginx",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "docker.io/nginx",
+      "tag": 1.15,
+      "groups": [
+        "kube-node"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "kubeadm_coredns",
+    "value": {
+      "repo": "gcr.io/google-containers/coredns",
+      "container": true,
+      "tag": "1.3.1",
+      "enabled": true,
+      "groups": "k8s-cluster"
+    }
+  },
+  {
+    "key": "dashboard",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "gcr.io/google_containers/kubernetes-dashboard-amd64",
+      "tag": "v1.10.1",
+      "groups": [
+        "kube-master"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "calico_policy",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "docker.io/calico/kube-controllers",
+      "tag": "v3.4.0",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "kubeadm_kube-scheduler",
+    "value": {
+      "repo": "gcr.io/google-containers/kube-scheduler",
+      "container": true,
+      "tag": "v1.15.0",
+      "enabled": true,
+      "groups": "k8s-cluster"
+    }
+  },
+  {
+    "key": "nodelocaldns",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "k8s.gcr.io/k8s-dns-node-cache",
+      "tag": "1.15.1",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "calicoctl",
+    "value": {
+      "unarchive": false,
+      "file": true,
+      "dest": "/root/releases/calicoctl",
+      "enabled": true,
+      "url": "https://github.com/projectcalico/calicoctl/releases/download/v3.4.4/calicoctl-linux-amd64",
+      "version": "v3.4.4",
+      "mode": "0755",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "owner": "root",
+      "sha256": "93bd084e053cf1bf3b7fef369677bd6767c30fe7135e2c7e044e31693422ef61"
+    }
+  },
+  {
+    "key": "hyperkube_file",
+    "value": {
+      "unarchive": false,
+      "file": true,
+      "dest": "/root/releases/hyperkube-v1.15.0-amd64",
+      "enabled": true,
+      "url": "https://storage.googleapis.com/kubernetes-release/release/v1.15.0/bin/linux/amd64/hyperkube",
+      "version": "v1.15.0",
+      "mode": "0755",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "owner": "root",
+      "sha256": "3cc72cc58517b97c608c7a59a20255675bc70f07217c9e11e58cac7746139283"
+    }
+  },
+  {
+    "key": "cni",
+    "value": {
+      "unarchive": false,
+      "file": true,
+      "dest": "/root/releases/cni-plugins-linux-amd64-v0.8.1.tgz",
+      "enabled": true,
+      "url": "https://github.com/containernetworking/plugins/releases/download/v0.8.1/cni-plugins-linux-amd64-v0.8.1.tgz",
+      "version": "v0.8.1",
+      "mode": "0755",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "owner": "root",
+      "sha256": "e9bfc78acd3ae71be77eb8f3e890cc9078a33cc3797703b8ff2fc3077a232252"
+    }
+  },
+  {
+    "key": "kubeadm_kube-controller-manager",
+    "value": {
+      "repo": "gcr.io/google-containers/kube-controller-manager",
+      "container": true,
+      "tag": "v1.15.0",
+      "enabled": true,
+      "groups": "k8s-cluster"
+    }
+  },
+  {
+    "key": "calico_node",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "docker.io/calico/node",
+      "tag": "v3.4.0",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "coredns",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "docker.io/coredns/coredns",
+      "tag": "1.5.0",
+      "groups": [
+        "kube-master"
+      ],
+      "sha256": ""
+    }
+  },
+  {
+    "key": "calico_cni",
+    "value": {
+      "container": true,
+      "enabled": true,
+      "repo": "docker.io/calico/cni",
+      "tag": "v3.4.0",
+      "groups": [
+        "k8s-cluster"
+      ],
+      "sha256": ""
+    }
+  }
+]
