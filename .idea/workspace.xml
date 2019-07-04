@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de9642d7-c7d0-47ba-88af-2b767fd20f69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster-proportional-autoscaler-amd64/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/cluster-proportional-autoscaler-amd64/Dockerfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +21,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pause/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+              <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cluster-proportional-autoscaler-amd64/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="59" selection-start-column="59" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -86,6 +95,7 @@
         <option value="$PROJECT_DIR$/kube-proxy/Dockerfile" />
         <option value="$PROJECT_DIR$/kube-scheduler/Dockerfile" />
         <option value="$PROJECT_DIR$/pause/Dockerfile" />
+        <option value="$PROJECT_DIR$/cluster-proportional-autoscaler-amd64/Dockerfile" />
       </list>
     </option>
   </component>
@@ -108,6 +118,11 @@
             <path>
               <item name="gcr_io_cn" type="b2602c69:ProjectViewProjectNode" />
               <item name="gcr_io_cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gcr_io_cn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gcr_io_cn" type="462c0819:PsiDirectoryNode" />
+              <item name="cluster-proportional-autoscaler-amd64" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="gcr_io_cn" type="b2602c69:ProjectViewProjectNode" />
@@ -157,11 +172,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/coredns" />
       <recent name="$PROJECT_DIR$/kube-apiserver" />
       <recent name="$PROJECT_DIR$/kube-controller-manager" />
       <recent name="$PROJECT_DIR$/kube-proxy" />
-      <recent name="$PROJECT_DIR$/kube-scheduler" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -189,16 +204,18 @@
       <workItem from="1562137958733" duration="1946000" />
       <workItem from="1562149158172" duration="2273000" />
       <workItem from="1562206078059" duration="588000" />
+      <workItem from="1562228372975" duration="324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4807000" />
+    <option name="totallyTimeSpent" value="5131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -266,7 +283,14 @@
     <entry file="file://$PROJECT_DIR$/pause/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+          <caret line="1" column="37" lean-forward="true" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cluster-proportional-autoscaler-amd64/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="59" selection-start-column="59" selection-end-column="59" />
         </state>
       </provider>
     </entry>
